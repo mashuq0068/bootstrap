@@ -5,16 +5,16 @@ const Login = () => {
       className="d-flex container justify-content-center align-items-center"
     >
       <div className=" p-3 shadow-lg ">
-        <h3 className="text-center mb-3 ">Sign <span className="text-primary">in</span></h3>
+        <h3 className="text-center mb-3 "><span className="text-main fw-bold">Login</span></h3>
         <form className="addUserForm    d-flex justify-content-center align-items-center">
-          <div className=" d-flex custom-width  justify-content-center  flex-column gap-3 ">
+          <div className=" d-flex custom-form-width  justify-content-center  flex-column gap-3 ">
             {/* email */}
             <label htmlFor="email">
               Email <span className="text-danger">*</span>
             </label>
             <input
               type="email"
-              className="form-control"
+              className="form-control-custom"
               id="email"
               name="email"
               autoComplete="off"
@@ -26,7 +26,7 @@ const Login = () => {
             </label>
             <input
               type="password"
-              className="form-control"
+              className="form-control-custom"
               id="password"
               name="password"
               autoComplete="off"
@@ -38,21 +38,21 @@ const Login = () => {
             </label>
             <input
               type="confirmPassword"
-              className="form-control"
+              className="form-control-custom"
               id="confirmPassword"
               name="confirmPassword"
               autoComplete="off"
               placeholder="Confirm your password"
             />
             {/* submit button  */}
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn bg-main  shadow-lg border-0 btn-primary">
               Login
             </button>
           </div>
         </form>
         <div className="d-flex justify-content-center gap-2 align-items-center">
           <p className="text-center mt-3">Don not have Account? </p>
-          <span className="text-primary">Sign Up</span>
+          <span className="text-main fw-medium">Sign Up</span>
         </div>
       </div>
     </div>

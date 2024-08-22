@@ -35,6 +35,7 @@ function App() {
       </section> */}
       <section>
         <Sidebar/>
+        
       </section>
     </div>
   );

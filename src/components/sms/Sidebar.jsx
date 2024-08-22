@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FaSellcast, FaUserDoctor, FaUserPen, FaChrome } from "react-icons/fa6";
+import { RxCross1 } from "react-icons/rx";
 import {
   MdOutlineEventAvailable,
   MdOutlineSupervisorAccount,
@@ -19,7 +20,7 @@ const Sidebar = () => {
       {/* Toggle Button */}
       {!open && (
         <button
-          className="d-md-none position-absolute absolute-right mb-3 border-0"
+          className="d-lg-none  mb-3 border-0"
           onClick={() => setOpen(!open)}
           aria-controls="sidebar"
           aria-expanded={open}
@@ -29,102 +30,103 @@ const Sidebar = () => {
       )}
 
       {/* Sidebar Content */}
-      <Collapse in={open} dimension="width">
+      <Collapse in={open} className="position-relative" dimension="width">
       
         <div
           id="sidebar"
-          className="custom-sidebar-width text-white p-4 sidebar-bg d-md-block"
+          className="custom-sidebar-width text-white p-4 bg-main d-lg-block"
           style={{ minHeight: "100vh" }}
         >
         <button
-          className="d-lg-none  d-flex ms-auto justify-content-end sidebar-bg fs-3 text-white border-0"
+        style={{right:2}}
+          className="d-lg-none   position-absolute  top-0 bg-main fs-3 text-white border-0"
           onClick={() => setOpen(!open)}
           aria-controls="sidebar"
           
           aria-expanded={open}
         >
-          x
+          <RxCross1 className="fw-bold"/>
         </button>
           <div>
-            <h4 className="d-flex gap-3 mt-lg-4 mb-4">
+            <h4 className="d-flex gap-3 mt-3 mt-lg-4 mb-4">
               <LuLayoutDashboard /> Dashboard
             </h4>
          
           </div>
           <div className="d-flex flex-column gap-4">
-            <div className="d-flex align-items-center">
-              <FaUserDoctor />
+            <div className="d-flex ">
+              <FaUserDoctor className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">Doctors</Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
-                  <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
-                  <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
+                <Dropdown.Menu className="custom-dropdown-menu" >
+                  <Dropdown.Item  href="#/Item1-1">Item1</Dropdown.Item>
+                  <Dropdown.Item  href="#/Item1-2">Item2</Dropdown.Item>
+                  <Dropdown.Item  href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <FaSellcast />
+            <div className="d-flex ">
+              <FaSellcast className="mt-2"  />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">Sell menu</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <MdOutlineEventAvailable />
+            <div className="d-flex ">
+              <MdOutlineEventAvailable className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">
                   Lab Report
                 </Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <MdOutlineSupervisorAccount />
+            <div className="d-flex ">
+              <MdOutlineSupervisorAccount className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">Accounts</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <TbReport />
+            <div className="d-flex ">
+              <TbReport className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">Report</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <FaChrome />
+            <div className="d-flex ">
+              <FaChrome className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">HR Menu</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-            <div className="d-flex align-items-center">
-              <FaUserPen />
+            <div className="d-flex ">
+              <FaUserPen className="mt-2" />
               <Dropdown bsPrefix="custom-dropDown">
                 <Dropdown.Toggle id="dropdown-basic">User Role</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item href="#/Item1-1">Item1</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-2">Item2</Dropdown.Item>
                   <Dropdown.Item href="#/Item1-3">Item3</Dropdown.Item>
