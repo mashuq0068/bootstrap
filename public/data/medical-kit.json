@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Adhesive Bandages",
+      "quantity": 50,
+      "description": "Various sizes of adhesive bandages for covering small wounds and cuts."
+    },
+    {
+      "id": 2,
+      "name": "Antiseptic Wipes",
+      "quantity": 30,
+      "description": "Alcohol or iodine-based wipes for disinfecting wounds."
+    },
+    {
+      "id": 3,
+      "name": "Antibiotic Ointment",
+      "quantity": 10,
+      "description": "Ointment to prevent infection in minor cuts, scrapes, and burns."
+    },
+    {
+      "id": 4,
+      "name": "Sterile Gauze Pads",
+      "quantity": 20,
+      "description": "Pads for covering and protecting larger wounds."
+    },
+    {
+      "id": 5,
+      "name": "Medical Tape",
+      "quantity": 3,
+      "description": "Tape for securing bandages and gauze pads."
+    },
+    {
+      "id": 6,
+      "name": "Tweezers",
+      "quantity": 1,
+      "description": "Tool for removing splinters and foreign objects."
+    },
+    {
+      "id": 7,
+      "name": "Scissors",
+      "quantity": 1,
+      "description": "Scissors for cutting bandages, tape, and gauze."
+    },
+    {
+      "id": 8,
+      "name": "Thermometer",
+      "quantity": 1,
+      "description": "Device for measuring body temperature."
+    },
+    {
+      "id": 9,
+      "name": "First Aid Manual",
+      "quantity": 1,
+      "description": "Guide for administering basic first aid."
+    },
+    {
+      "id": 10,
+      "name": "Instant Cold Pack",
+      "quantity": 2,
+      "description": "Pack for reducing swelling and pain by applying cold."
+    },
+    {
+      "id": 11,
+      "name": "Instant Heat Pack",
+      "quantity": 2,
+      "description": "Pack for providing warmth to sore muscles or joints."
+    },
+    {
+      "id": 12,
+      "name": "Elastic Bandage",
+      "quantity": 2,
+      "description": "Bandage for wrapping sprains and strains."
+    },
+    {
+      "id": 13,
+      "name": "CPR Mask",
+      "quantity": 1,
+      "description": "Mask for performing CPR with a barrier to prevent contact with the patient's mouth."
+    },
+    {
+      "id": 14,
+      "name": "Disposable Gloves",
+      "quantity": 20,
+      "description": "Gloves for maintaining hygiene while treating wounds."
+    },
+    {
+      "id": 15,
+      "name": "Hydrocortisone Cream",
+      "quantity": 1,
+      "description": "Cream for reducing inflammation and itching."
+    },
+    {
+      "id": 16,
+      "name": "Burn Cream",
+      "quantity": 1,
+      "description": "Cream for soothing and treating minor burns."
+    },
+    {
+      "id": 17,
+      "name": "Eye Wash",
+      "quantity": 1,
+      "description": "Solution for flushing out foreign particles from the eyes."
+    },
+    {
+      "id": 18,
+      "name": "Alcohol Pads",
+      "quantity": 40,
+      "description": "Pads soaked in alcohol for sanitizing hands and equipment."
+    },
+    {
+      "id": 19,
+      "name": "Tongue Depressors",
+      "quantity": 10,
+      "description": "Wooden sticks for pressing down the tongue during a throat examination."
+    },
+    {
+      "id": 20,
+      "name": "Elastic Medical Bandage",
+      "quantity": 1,
+      "description": "Bandage used for support and compression of injured areas."
+    }
+  ]
+  

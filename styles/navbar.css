@@ -1,0 +1,26 @@
+.custom-offcanvas-bg {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ) !important;
+  color: white !important; 
+  
+}
+.btn-close {
+  background-color: transparent;
+  filter: invert(1); 
+}
+
+.btn-close:hover {
+  filter: invert(0.7); 
+}
+.offcanvas-backdrop.show {
+    opacity: 0;
+}
+@media (max-width: 800px) {
+  .text-overlay {
+    color: white !important;
+  }
+}

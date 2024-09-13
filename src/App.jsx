@@ -2,17 +2,19 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Faq from "./components/Faq";
 import Navbar from "./components/Navabar";
-// import New from "./components/New";
+import New from "./components/New";
 import Services from "./components/services";
+import Card from "./components/sms/Card";
 import Login from "./components/sms/Login";
 import Sidebar from "./components/sms/Sidebar";
 import SignUp from "./components/sms/SignUp";
 import Testimonial from "./components/Testimonial";
+import "../node_modules/bootstrap"
 
 function App() {
   return (
-    <div>
-      {/* <section>
+    <div className="">
+      <section className="position-lg-static position-sticky top-0 bg-pulse z-3">
         <Navbar />
       </section>
       <section>
@@ -26,17 +28,23 @@ function App() {
       </section>
       <section>
        <Testimonial/>
-      </section> */}
+      </section>
       {/* <section>
         <SignUp/>
       </section>
       <section>
       <Login/>
       </section> */}
-      <section>
+      {/* <section>
+        <Card/>
+      </section> */}
+      {/* <section>
+       <Services/>
+      </section> */}
+      {/* <section>
         <Sidebar/>
         
-      </section>
+      </section> */}
     </div>
   );
 }

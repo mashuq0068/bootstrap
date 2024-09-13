@@ -6,6 +6,7 @@ const Login = () => {
     >
       <div className=" p-3 shadow-lg ">
         <h3 className="text-center mb-3 "><span className="text-main fw-bold">Login</span></h3>
+        {/* form */}
         <form className="addUserForm    d-flex justify-content-center align-items-center">
           <div className=" d-flex custom-form-width  justify-content-center  flex-column gap-3 ">
             {/* email */}

@@ -4,6 +4,7 @@ const SignUp = () => {
     <div style={{height:"100vh"}} className="d-flex container justify-content-center align-items-center">
       <div  className=" p-3 shadow-lg rounded-3 ">
           <h3 className="text-center mb-3 text-black">Sign  <span className="text-main fw-bold">up</span></h3>
+          {/* form */}
         <form   className="addUserForm    d-flex justify-content-center align-items-center">
           <div className=" d-flex custom-form-width  justify-content-center  flex-column gap-3 ">
             {/* name */}
